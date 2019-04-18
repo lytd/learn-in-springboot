@@ -7,18 +7,18 @@
 		<module>web-mvc</module>
 		<module>web-rest</module>
 		<module>web-view</module>
-		<module>webservletjsp</module>
+		<module>web-servlet-jsp</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.4.RELEASE</version>
+		<version>1.5.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>td.learn.springboot</groupId>
 	<artifactId>springbootweb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webmvc</name>
+	<name>springbootweb</name>
 	<description>MVC Demo project for Spring Boot</description>
 
 	<properties>
@@ -29,6 +29,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
