@@ -9,6 +9,16 @@ public class User {
 
     private String name;
 
+    private String remark;
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
     public int getAge() {
         return age;
     }
@@ -23,5 +33,15 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("User{");
+        sb.append("age=").append(age);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", remark='").append(remark).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
